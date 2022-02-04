@@ -1,0 +1,45 @@
+* {
+  background-color: #000;
+  color: seashell;
+  opacity: 0.9;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 19px;
+}
+
+nav {
+  border-bottom: 1px solid seashell;
+}
+
+img.logo {
+  height: 50px;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-image: url(./img-mission-background.webp);
+  height: 700px;
+  width: 1200px;
+}
+
+header section {
+  align-items: center;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.email,
+.phone-number {
+  text-align: center;
+}
