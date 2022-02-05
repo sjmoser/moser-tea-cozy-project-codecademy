@@ -6,37 +6,131 @@
   font-family: Helvetica, sans-serif;
 }
 
-body {
-  padding: 20px 35px;
-}
-
-nav {
-  border-bottom: 1px solid seashell;
-}
-
 img.logo {
   height: 50px;
+  margin-left: 10px;
   background-color: transparent;
 }
 
 ul {
   list-style: none;
+  float: right;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+div.nav {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(212, 204, 198, 0.9);
+}
+
+div.container-main {
+  padding: 25px 25px;
+}
+
+.container-locations,
+.container-teas,
+.container-main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.container-teas {
+  margin: 0 0 0;
+}
+
+.container-teas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+}
+
+.tea-image {
+  width: 300px;
+  min-height: 200px;
+}
+
+#berry,
+#rum,
+#donuts,
+#myrtle,
+#bizarre {
+  text-align: center;
+  font-weight: bold;
+}
+
+section h2,
+section h4 {
+  margin: 5px;
+}
+
+section.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  justify-content: center;
+  position: relative;
+  top: 300px;
 }
 
 header {
   background-image: url(./img-mission-background.webp);
   height: 700px;
   width: 1200px;
+  margin: 0 auto;
 }
 
-.locations {
+main {
+  text-align: center;
+  width: 100%;
+}
+
+main h2,
+.container-locations {
+  margin-top: 75px;
+}
+
+main h4 {
+  margin-bottom: 5px;
+}
+
+.container-locations {
   background-image: url(./img-locations-background.webp);
   height: 500px;
   width: 1200px;
 }
 
-header section {
-  align-items: center;
+.addresses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 40px;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.container-locations h2 {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  padding: 75px 0 15px;
+  margin: 0 auto;
+}
+
+.location-1,
+.location-2,
+.location-3 {
+  width: 300px;
+  height: 250px;
+  line-height: 200%;
+  opacity: 1;
+  padding: 15px auto;
 }
 
 h2,
@@ -45,7 +139,43 @@ h4 {
   text-align: center;
 }
 
+h2 {
+  font-size: 150%;
+}
+
+.addresses h3,
+.addresses h4 {
+  margin: 10px auto;
+}
+
+.addresses h4 {
+  line-height: 250%;
+}
+
+h3 {
+  font-size: 125%;
+}
+
+p,
+.email a,
+.phone-number,
+.copyright {
+  font-size: 75%;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+footer h2 {
+  margin: 10px auto;
+}
+
 .email,
 .phone-number {
   text-align: center;
+}
+
+.copyright {
+  text-align: left;
 }
