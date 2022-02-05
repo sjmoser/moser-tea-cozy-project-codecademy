@@ -1,3 +1,4 @@
+/*Whole Page Styling*/
 * {
   background-color: #000;
   color: seashell;
@@ -6,6 +7,7 @@
   font-family: Helvetica, sans-serif;
 }
 
+/*Navigation Menu*/
 img.logo {
   height: 50px;
   margin-left: 10px;
@@ -27,6 +29,31 @@ div.nav {
   border-bottom: 1px solid rgba(212, 204, 198, 0.9);
 }
 
+/*Header*/
+section h2,
+section h4 {
+  margin: 5px;
+}
+
+section.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+
+header {
+  background-image: url(./img-mission-background.webp);
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*Main Site Content*/
 div.container-main {
   padding: 25px 25px;
 }
@@ -63,29 +90,6 @@ div.container-teas {
   font-weight: bold;
 }
 
-section h2,
-section h4 {
-  margin: 5px;
-}
-
-section.header {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  vertical-align: center;
-  justify-content: center;
-  position: relative;
-  top: 300px;
-}
-
-header {
-  background-image: url(./img-mission-background.webp);
-  height: 700px;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 main {
   text-align: center;
   width: 100%;
@@ -99,6 +103,8 @@ main h2,
 main h4 {
   margin-bottom: 5px;
 }
+
+/*Locations*/
 
 .container-locations {
   background-image: url(./img-locations-background.webp);
@@ -156,19 +162,20 @@ h3 {
   font-size: 125%;
 }
 
-p,
-.email a,
-.phone-number,
-.copyright {
-  font-size: 75%;
-}
-
 h4 {
   font-weight: normal;
 }
 
+/*Contact Info (Footer)*/
+
 footer h2 {
   margin: 10px auto;
+}
+
+.email a,
+.phone-number,
+.copyright {
+  font-size: 75%;
 }
 
 .email,
